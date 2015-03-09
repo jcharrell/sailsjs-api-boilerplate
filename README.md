@@ -4,7 +4,8 @@ A boilerplate for Sails.JS API framework.  This particular boiler plate provides
 + Creating/updating users
 + Login authentication
 + Password resets via e-mail
-+ JSON web tokens for ACL policy validation and stateless transactions
+
+Additionally it supports JSON web tokens for ACL policy validation and stateless transactions, as well as hassle free sending of HTML e-mails.
 
 ## Requirements
 - [Node.js](http://nodejs.org/)
