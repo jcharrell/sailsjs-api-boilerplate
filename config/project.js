@@ -38,7 +38,8 @@ module.exports.project = {
      * Email template: /assets/templates/email/forgotPassword                  *
      ***************************************************************************/
     uri: '/#/login/reset-password/',
-    template: 'forgotPassword'
+    template: 'forgotPassword',
+    subject: 'Password reset request received'
   }
 
 };
