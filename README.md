@@ -13,7 +13,7 @@ A boiler plate for Sails.JS API framework
 5. Accessible at at `http://localhost:3000`
 
 ## Configuring
-Some configurations will need to be made in order to tailor the API for your own needs.  Most importantly will be the project, email, and database settings.
+Some configurations will need to be made in order to tailor the API for your own needs.
 
 ### Project Settings `/config/project.js`
 Project settings include the project title, JSON web token secret, consuming website URL, and the returning URI for password reset e-mails.
