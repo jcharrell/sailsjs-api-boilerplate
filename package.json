@@ -5,6 +5,7 @@
   "description": "Sails.JS Boilerplate API",
   "keywords": [],
   "scripts": {
+    "preinstall": "sudo npm install -g sails",
     "start": "node app.js",
     "debug": "node debug app.js"
   },
