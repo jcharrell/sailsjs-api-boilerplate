@@ -33,6 +33,16 @@ module.exports = {
       type: 'string',
       defaultsTo: null
     }
+    /*
+     * By enabling the `is_admin` flag, the `isAdmin` and `orIsAdmin`
+     * policies become possible to use.
+
+    is_admin: {
+      type: 'boolean',
+      defaultsTo: false
+    }
+
+     */
   },
 
   // Lifecycle Callbacks
