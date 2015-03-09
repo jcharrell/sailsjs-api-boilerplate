@@ -44,7 +44,7 @@ module.exports = {
 
         var templateData = {
           to: user.email,
-          from: user.email,
+          from: 'dev@sq1.com',
           subject: sails.config.project.passwordReset.subject,
           userEmail: user.email,
           siteName: sails.config.project.name,
@@ -90,4 +90,3 @@ module.exports = {
     });
   }
 }
-
