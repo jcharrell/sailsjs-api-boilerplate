@@ -31,3 +31,9 @@ Policy settings define ACL policies for each controller within the API.  Policie
 
 ### Email Settings `/config/email.js`
 This consists of the `nodemailer` transporter settings.  By default, the boilerplate API utilizes a SMTP pool.
+
+## Extra
+###Postman Collection
+Included is a [Postman](https://chrome.google.com/webstore/detail/postman-rest-client/fdmmgilgnpjigdojojpjoooidkmcomcm?hl=en) collection, with example requests to the `/users` API endpoint, which is located at `/sails-boilerplate-api.json.postman_collection`. 
+
+To import a collection into Postman, ensure that the `Collections` tab, in the top left, is selected.  To the right of that tab, choose the `Import Collection` icon.  Simply drag the collection file to the import modal or browse to the collection directly.
