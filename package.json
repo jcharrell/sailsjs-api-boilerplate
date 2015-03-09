@@ -7,7 +7,8 @@
   "scripts": {
     "preinstall": "sudo npm install -g sails",
     "start": "node app.js",
-    "debug": "node debug app.js"
+    "debug": "node debug app.js",
+    "dev": "NODE_ENV=local ./node_modules/.bin/sails lift"
   },
   "dependencies": {
     "bcrypt": "^0.8.1",
