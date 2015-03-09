@@ -15,9 +15,12 @@ module.exports = {
       if (user) {
         User.isValidPassword(req.body.password, user, function(err, match) {
           if (match) {
+            // password match
             var token = TokenService.sign(user, req.body.ttl);
 
-            // password match
+            delete user.password;
+            delete user.verification_token;
+
             res.ok({user: user, token: token});
           } else {
             res.unauthorized()
