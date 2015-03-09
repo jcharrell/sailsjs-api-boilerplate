@@ -27,7 +27,7 @@ module.exports.project = {
    * and generated links. Ensure that the correct URL is defined for each    *
    * environment configuration, if it should differ.
    ***************************************************************************/
-  webUrl: 'http://boilerplate.api.sq1.com',
+  webUrl: 'http://boilerplate.sq1.com',
 
   passwordReset: {
     /***************************************************************************
