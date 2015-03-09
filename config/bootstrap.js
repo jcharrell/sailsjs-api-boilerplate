@@ -11,6 +11,7 @@
 
 module.exports.bootstrap = function(cb) {
 
+  /*
   user = {
     first_name: "Edward",
     last_name: "Teach",
@@ -26,4 +27,7 @@ module.exports.bootstrap = function(cb) {
       cb()
     }
   });
+  */
+
+  cb();
 };
