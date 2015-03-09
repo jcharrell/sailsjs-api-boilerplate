@@ -1,5 +1,10 @@
 # sailsJS-boilerplate
-A boiler plate for Sails.JS API framework
+A boilerplate for Sails.JS API framework.  This particular boiler plate provides a `/users` endpoint which supports:
+
++ Creating/updating users
++ Login authentication
++ Password resets via e-mail
++ JSON web tokens for ACL policy validation and stateless transactions
 
 ## Requirements
 - [Node.js](http://nodejs.org/)
