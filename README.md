@@ -14,9 +14,29 @@ Additionally it supports JSON web tokens for ACL policy validation and stateless
 
 1. `git clone git@github.com:sq1agency/sailsJS-boilerplate.git`
 2. `cd sailsJS-boilerplate`
-3. `npm install`
+3. `npm install` (may need `sudo`). 
 4. `NODE_ENV=local sails lift`
 5. Accessible at at `http://localhost:3000`
+
+### Errors to handle
+#### 1. Unable to check your npm-version: 
+```
+Sails.js Installation - Error
+--------------------------------------------------------
+Unable to check your npm-version
+```
+Running this line in your terminal should do the trick:
+`curl -L https://npmjs.org/install.sh | sudo sh`
+
+Then try `npm install` again and sails should install with no errors.
+
+#### 2. -bash: sails: command not found
+```
+$ NODE_ENV=local sails lift
+-bash: sails: command not found
+```
+You may need to install sails.js globally. If so run this:
+`sudo npm install sails -g`
 
 ## Configuring
 Some configurations will need to be made in order to tailor the API for your own needs.
