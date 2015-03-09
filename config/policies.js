@@ -57,7 +57,6 @@ module.exports.policies = {
     create: ['isUnauthenticated'],
 
 
-
     /***************************************************************************
      *                                                                          *
      * Do not allow anyone to list all users.  If the user model has an         *
@@ -75,7 +74,16 @@ module.exports.policies = {
      ***************************************************************************/
     delete: ['isAuthenticated', 'isUserOwner'],
     findOne: ['isAuthenticated', 'isUserOwner'],
-    update: ['isAuthenticated', 'isUserOwner']
+    update: ['isAuthenticated', 'isUserOwner'],
+
+
+    /***************************************************************************
+     *                                                                          *
+     * Only allow user record owners to view, update or delete their records    *
+     *                                                                          *
+     ***************************************************************************/
+    requestPasswordReset: true,
+    validatePasswordReset: true
   }
 
 };
