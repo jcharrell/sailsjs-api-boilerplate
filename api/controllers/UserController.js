@@ -44,7 +44,7 @@ module.exports = {
 
         var templateData = {
           to: user.email,
-          from: user.email,
+          from: sails.config.project.passwordReset.from,
           subject: sails.config.project.passwordReset.subject,
           userEmail: user.email,
           siteName: sails.config.project.name,

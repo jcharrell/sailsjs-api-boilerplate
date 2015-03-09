@@ -39,7 +39,8 @@ module.exports.project = {
      ***************************************************************************/
     uri: '/#/login/reset-password/',
     template: 'forgotPassword',
-    subject: 'Password reset request received'
+    subject: 'Password reset request received',
+    from: 'dev@sq1.com'
   }
 
 };
