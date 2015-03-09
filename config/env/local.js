@@ -18,8 +18,8 @@ module.exports = {
    ***************************************************************************/
   connections: {
     postgresqlServer: {
-      password: 'apassword',
-      database: 'shell_portal_test'
+      user: 'captain',
+      password: 'leeward'
     }
   },
 
