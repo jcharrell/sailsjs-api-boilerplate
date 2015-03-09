@@ -8,7 +8,7 @@ module.exports = {
    * `isAuthorized` policy to any controllers which will utilize this.
    ***************************************************************************/
   getUser: function (req) {
-    user = TokenService.decode(req.headers.authorization, sails.config.session.secret);
+    user = TokenService.decode(req.headers.authorization, sails.config.project.secret);
     return user;
   }
 }

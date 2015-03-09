@@ -16,6 +16,13 @@ module.exports.project = {
   name: 'Boilerplate Project',
 
   /***************************************************************************
+   *                                                                          *
+   * Session secret is utilized when creating JSON Web Tokens                 *
+   *                                                                          *
+   ***************************************************************************/
+  secret: 'ewfn09qu43f09qfj94qf*&H#(R',
+
+  /***************************************************************************
    * Set the url of the consuming website.  This will be used for e-mails    *
    * and generated links. Ensure that the correct URL is defined for each    *
    * environment configuration, if it should differ.

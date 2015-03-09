@@ -15,11 +15,13 @@
 module.exports.session = {
 
   /***************************************************************************
-  *                                                                          *
-  * Session secret is utilized when creating JSON Web Tokens                 *
-  *                                                                          *
-  ***************************************************************************/
-  secret: 'ewfn09qu43f09qfj94qf*&H#(R'
+   *                                                                          *
+   * Session secret is automatically generated when your new app is created   *
+   * Replace at your own risk in production-- you will invalidate the cookies *
+   * of your users, forcing them to log in again.                             *
+   *                                                                          *
+   ***************************************************************************/
+  secret: '7ede646b773180a021a504db70e368eb'
 
 
   /***************************************************************************
