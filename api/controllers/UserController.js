@@ -18,9 +18,6 @@ module.exports = {
             // password match
             var token = TokenService.sign(user, req.body.ttl);
 
-            delete user.password;
-            delete user.verification_token;
-
             res.ok({user: user, token: token});
           } else {
             res.unauthorized()

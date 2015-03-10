@@ -28,7 +28,7 @@ module.exports = {
     password: {
       required: true,
       type: 'string'
-    }
+    },
 
     /*
      * By enabling the `is_admin` flag, the `isAdmin` and `orIsAdmin`
@@ -40,6 +40,12 @@ module.exports = {
     }
 
      */
+
+    toJSON: function() {
+      var obj = this.toObject();
+      delete obj.password;
+      return obj;
+    }
   },
 
   // Lifecycle Callbacks
