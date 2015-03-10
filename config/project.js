@@ -40,7 +40,8 @@ module.exports.project = {
     uri: '/#/login/reset-password/',
     template: 'forgotPassword',
     subject: 'Password reset request received',
-    from: 'dev@sq1.com'
+    from: 'dev@sq1.com',
+    tokenTTL: 120 // In minutes
   }
 
 };

@@ -28,11 +28,8 @@ module.exports = {
     password: {
       required: true,
       type: 'string'
-    },
-    verification_token: {
-      type: 'string',
-      defaultsTo: null
     }
+
     /*
      * By enabling the `is_admin` flag, the `isAdmin` and `orIsAdmin`
      * policies become possible to use.

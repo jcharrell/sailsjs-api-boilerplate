@@ -39,8 +39,7 @@ module.exports = {
 
       if (user) {
         // Create a verification token, which will expire in 2 hours
-        user.verification_token = TokenService.sign({id: user.id}, 120);
-        user.save()
+        token = TokenService.sign({id: user.id}, sails.config.project.passwordReset.tokenTTL);
 
         var templateData = {
           to: user.email,
@@ -48,7 +47,7 @@ module.exports = {
           subject: sails.config.project.passwordReset.subject,
           userEmail: user.email,
           siteName: sails.config.project.name,
-          url: sails.config.project.webUrl + sails.config.project.passwordReset.uri + user.verification_token
+          url: sails.config.project.webUrl + sails.config.project.passwordReset.uri + token
         };
 
         EmailService.sendMail(sails.config.project.passwordReset.template, templateData, function(err, message) {
@@ -66,27 +65,27 @@ module.exports = {
 
   validatePasswordReset: function (req, res) {
     // Verify that the reset token has not expired
-    TokenService.verify(req.params.token, function(err, data) {
-      if(err) {
-        res.serverError(err);
-      } else {
-        User.findOne({verification_token: req.params.token}).exec(function (err, user) {
-          if (err){
+    TokenService.verify(token, function(err, data) {
+        if(err) {
             res.serverError(err);
-          } else {
-            if (user) {
-              User.encryptPassword(req.body.password, function(err, encryptedPassword) {
-                user.password = encryptedPassword;
-                user.verification_token = null;
-                user.save();
-                res.status(204).json({});
-              })
-            } else {
-              res.notFound({ error: 'User not found' });
-            }
-          }
-        });
-      }
+        } else {
+
+            User.findOne({id: data.id}).exec(function (err, user) {
+                if (err){
+                    res.serverError(err);
+                } else {
+                    if (user) {
+                        User.encryptPassword(req.body.password, function(err, encryptedPassword) {
+                            user.password = encryptedPassword;
+                            user.save();
+                            res.status(204).json({});
+                        })
+                    } else {
+                        res.notFound({ error: 'User not found' });
+                    }
+                }
+            });
+        }
     });
   }
 }
