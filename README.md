@@ -14,12 +14,12 @@ Additionally it supports JSON web tokens for ACL policy validation and stateless
 
 1. `git clone git@github.com:sq1agency/sailsJS-boilerplate.git`
 2. `cd sailsJS-boilerplate`
-3. `npm install` (may need `sudo`). 
-4. `NODE_ENV=local sails lift`
+3. `npm install` (may need `sudo`).
+4. `npm run dev`
 5. Accessible at at `http://localhost:3000`
 
 ### Errors to handle
-#### 1. Unable to check your npm-version: 
+#### 1. Unable to check your npm-version:
 ```
 Sails.js Installation - Error
 --------------------------------------------------------
@@ -32,7 +32,7 @@ Then try `npm install` again and sails should install with no errors.
 
 #### 2. -bash: sails: command not found
 ```
-$ NODE_ENV=local sails lift
+$ npm run dev
 -bash: sails: command not found
 ```
 You may need to install sails.js globally. If so run this:
@@ -60,7 +60,7 @@ This consists of the `nodemailer` transporter settings.  By default, the boilerp
 
 ## Extra
 ####Postman Collection
-Included is a [Postman](https://chrome.google.com/webstore/detail/postman-rest-client/fdmmgilgnpjigdojojpjoooidkmcomcm?hl=en) collection, with example requests to the `/users` API endpoint, which is located at `/sails-boilerplate-api.json.postman_collection`. 
+Included is a [Postman](https://chrome.google.com/webstore/detail/postman-rest-client/fdmmgilgnpjigdojojpjoooidkmcomcm?hl=en) collection, with example requests to the `/users` API endpoint, which is located at `/sails-boilerplate-api.json.postman_collection`.
 
 To import a collection into Postman, ensure that the `Collections` tab, in the top left, is selected.  To the right of that tab, choose the `Import Collection` icon.  Simply drag the collection file to the import modal or browse to the collection directly.
 
