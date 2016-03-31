@@ -27,7 +27,7 @@ module.exports.project = {
    * and generated links. Ensure that the correct URL is defined for each    *
    * environment configuration, if it should differ.
    ***************************************************************************/
-  webUrl: 'http://boilerplate.sq1.com',
+  webUrl: 'http://boilerplate.yourdomain.com',
 
   passwordReset: {
     /***************************************************************************
@@ -40,7 +40,7 @@ module.exports.project = {
     uri: '/#/login/reset-password/',
     template: 'forgotPassword',
     subject: 'Password reset request received',
-    from: 'dev@sq1.com',
+    from: 'dev@yourdomain.com',
     tokenTTL: 120 // In minutes
   }
 
