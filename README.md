@@ -1,4 +1,4 @@
-# sailsJS-boilerplate
+# sailsjs-api-boilerplate
 A boilerplate for the Sails.JS API framework.  This particular boiler plate provides a `/users` endpoint which supports:
 
 + Creating/updating users
@@ -12,8 +12,8 @@ Additionally it supports JSON web tokens for ACL policy validation and stateless
 
 ## Up and Running
 
-1. `git clone git@github.com:sq1agency/sailsJS-boilerplate.git`
-2. `cd sailsJS-boilerplate`
+1. `git clone git@github.com:jcharrell/sailsjs-api-boilerplate.git`
+2. `cd sailsjs-api-boilerplate`
 3. `npm install` (may need `sudo`).
 4. `npm run dev`
 5. Accessible at at `http://localhost:3000`
