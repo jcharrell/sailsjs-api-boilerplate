@@ -34,7 +34,7 @@ module.exports = {
    * and generated links                                                     *
    ***************************************************************************/
   project: {
-    webUrl: 'http://api.boilerplate.sq1.com.sq1lo.co'
+    webUrl: 'http://local.api.boilerplate.yourdomain.com'
   }
 
 };
