@@ -8,7 +8,7 @@ module.exports = {
   },
 
   sign: function(data, ttl) {
-    return jwt.sign(data, sails.config.project.secret, { expiresInMinutes: ttl });
+    return jwt.sign(data, sails.config.project.secret, { expiresIn: ttl });
   },
 
   verify: function(token, cb) {

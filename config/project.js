@@ -41,7 +41,7 @@ module.exports.project = {
     template: 'forgotPassword',
     subject: 'Password reset request received',
     from: 'dev@yourdomain.com',
-    tokenTTL: 120 // In minutes
+    tokenTTL: 7200000 // In milliseconds
   }
 
 };
