@@ -48,8 +48,8 @@ module.exports = {
         };
 
         EmailService.sendMail(sails.config.project.passwordReset.template, templateData, function(err, message) {
-          if (err) return sails.log('> error sending password reset email');
-          sails.log('> sending password reset email to:', user.email);
+          if (err) return sails.log.error('> error sending password reset email', err);
+          sails.log.verbose('> sending password reset email to:', user.email);
         });
 
         res.status(204).json({});
