@@ -65,4 +65,4 @@ Included is a [Postman](https://chrome.google.com/webstore/detail/postman-rest-c
 To import a collection into Postman, ensure that the `Collections` tab, in the top left, is selected.  To the right of that tab, choose the `Import Collection` icon.  Simply drag the collection file to the import modal or browse to the collection directly.
 
 ####Sails Documentation
-Documentation specific to the Sails.js framework may be found [here](http://sailsjs.org/#!/documentation/concepts).
+Documentation specific to the Sails.js framework may be found [here](http://sailsjs.org/documentation/concepts/).
